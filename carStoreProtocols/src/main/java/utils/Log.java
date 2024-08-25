@@ -1,4 +1,4 @@
-package Utils;
+package utils;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.concurrent.ConcurrentLinkedDeque;
+import java.util.function.Supplier;
 
 public class Log {
     private final String path;
@@ -67,5 +68,17 @@ public class Log {
             }
         };
         new Thread(task).start();
+    }
+
+    public void logInfo(Supplier<String> message) {
+        write("INFO", message.get());
+    }
+
+    public void logWarning(Supplier<String> message) {
+        write("WARNING", message.get());
+    }
+
+    public void logError(Supplier<String> message) {
+        write("ERROR", message.get());
     }
 }

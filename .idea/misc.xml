@@ -7,6 +7,12 @@
         <option value="$PROJECT_DIR$/carStoreUserBD/pom.xml" />
         <option value="$PROJECT_DIR$/carStoreProtocols/pom.xml" />
         <option value="$PROJECT_DIR$/carStoreUserDB/pom.xml" />
+        <option value="$PROJECT_DIR$/carStoreUsersDBDiscoveryServer/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/carStoreUsersService/pom.xml" />
+        <option value="$PROJECT_DIR$/carStoreUsersServiceDiscoveryServer/pom.xml" />
+        <option value="$PROJECT_DIR$/carStoreGateway/pom.xml" />
+        <option value="$PROJECT_DIR$/carStore/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,0 +1,10 @@
+package carStoreGatewayInterface;
+
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+
+public interface CarStoreGatewayInterface extends Remote {
+    String registerUser(String request) throws RemoteException;
+    String authenticate(String request) throws RemoteException ;
+    String searchUserByLogin(String request) throws RemoteException ;
+}

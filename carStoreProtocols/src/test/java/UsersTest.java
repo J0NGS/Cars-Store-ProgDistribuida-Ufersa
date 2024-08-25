@@ -1,5 +1,5 @@
-package model;
-
+import model.USER_POLICY;
+import model.Users;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.UUID;

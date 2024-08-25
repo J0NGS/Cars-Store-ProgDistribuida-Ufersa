@@ -7,12 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="carStoreUsersService" />
+        <module name="carStoreUsersServiceDiscoveryServer" />
+        <module name="carStoreGateway" />
+        <module name="carStoreUsersDBDiscoveryServer" />
         <module name="carStoreUserDB" />
+        <module name="carStore" />
         <module name="carStoreProtocols" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="UserDB" target="21" />
-    </bytecodeTargetLevel>
   </component>
 </project>
