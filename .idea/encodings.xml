@@ -3,6 +3,16 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/carStore/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/carStore/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/carStoreCarsDB/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/carStoreCarsDB/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/carStoreCarsDBDiscoveryServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/carStoreCarsDBDiscoveryServer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/carStoreCarsServIce/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/carStoreCarsServIce/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/carStoreCarsService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/carStoreCarsService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/carStoreCarsServiceDiscoveryServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/carStoreCarsServiceDiscoveryServer/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/carStoreGateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/carStoreGateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/carStoreUsersService/src/main/java" charset="UTF-8" />

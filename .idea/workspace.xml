@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d149b0c9-2076-49f6-84cb-3e572e3b509d" name="Changes" comment="pratica-off1-progDistribuida">
+      <change afterPath="$PROJECT_DIR$/carStoreCarsDB/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carStoreCarsDB/src/main/java/BD/ProtocolCarsDBImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carStoreCarsDB/src/main/java/ServerCarsDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carStoreCarsDBDiscoveryServer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carStoreCarsDBDiscoveryServer/src/main/java/CarStoreCarsDBDiscoveryServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carStoreCarsDBDiscoveryServer/src/main/java/CarStoreCarsDBDiscoveryServerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carStoreCarsServIce/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carStoreCarsServIce/src/main/java/CarsServiceServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carStoreCarsServIce/src/main/java/ProtocolCarsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carStoreCarsServiceDiscoveryServer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carStoreCarsServiceDiscoveryServer/src/main/java/CarStoreCarsServiceDiscoveryServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carStoreCarsServiceDiscoveryServer/src/main/java/CarsServiceDiscoveryServerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carStoreProtocols/src/main/java/carsDBProtocols/CarsDBProtocolInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carStoreProtocols/src/main/java/carsServiceProtocols/CarsServiceProtocolInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carStoreProtocols/src/main/java/model/DTO/CreateCarRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreProtocols/src/main/java/discoveryInterface/DiscoveryServerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreProtocols/src/main/java/discoveryInterface/DiscoveryServerInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreProtocols/src/main/java/model/Cars.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreProtocols/src/main/java/model/Cars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreProtocols/src/main/java/userBDProtocols/UserBDProtocolInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreProtocols/src/main/java/userDBProtocols/UsersDBProtocolInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreUserDB/src/main/java/BD/ProtocolUsersDBImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreUserDB/src/main/java/BD/ProtocolUsersDBImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreUserDB/src/main/java/ServerUsersDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreUserDB/src/main/java/ServerUsersDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreUsersServiceDiscoveryServer/src/main/java/UserServiceDiscoveryServerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreUsersServiceDiscoveryServer/src/main/java/UserServiceDiscoveryServerImpl.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;J0NGS&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/J0NGS/ProgDistribuida.git&quot;,
+    &quot;accountId&quot;: &quot;d04ab82f-ef5a-4a5e-985b-bcbf7fd4c59e&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2l7dms6nruehTGYSKVcjEWtNR8O" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CarStoreCarsDBDiscoveryServer.executor": "Run",
+    "Application.CarStoreCarsServiceDiscoveryServer.executor": "Run",
+    "Application.CarStoreClient.executor": "Run",
+    "Application.CarStoreGatewayServer.executor": "Run",
+    "Application.CarStoreUsersDBDiscoveryServer.executor": "Run",
+    "Application.CarStoreUsersServiceDiscoveryServer.executor": "Run",
+    "Application.CarsServiceServer.executor": "Run",
+    "Application.ServerCarsDB.executor": "Run",
+    "Application.ServerUsersDB.executor": "Run",
+    "Application.UserServiceServer.executor": "Run",
+    "Attach to process.pid 20828.executor": "ProcessAttachDebug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Documentos\Projetos\Ufersa\ProgDistribuida\carStoreCarsServoce\src\main\java" />
+      <recent name="D:\Documentos\Projetos\Ufersa\ProgDistribuida\carStore\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ServerCarsDB">
+    <configuration name="CarStoreCarsDBDiscoveryServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CarStoreCarsDBDiscoveryServer" />
+      <module name="carStoreCarsDBDiscoveryServer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarStoreCarsServiceDiscoveryServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CarStoreCarsServiceDiscoveryServer" />
+      <module name="carStoreCarsServiceDiscoveryServer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarStoreClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CarStoreClient" />
+      <module name="carStore" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarsServiceServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CarsServiceServer" />
+      <module name="carStoreCarsService" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerCarsDB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ServerCarsDB" />
+      <module name="carStoreCarsDB" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ServerCarsDB" />
+        <item itemvalue="Application.CarStoreCarsDBDiscoveryServer" />
+        <item itemvalue="Application.CarsServiceServer" />
+        <item itemvalue="Application.CarStoreCarsServiceDiscoveryServer" />
+        <item itemvalue="Application.CarStoreClient" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d149b0c9-2076-49f6-84cb-3e572e3b509d" name="Changes" comment="" />
+      <created>1724535210117</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1724535210117</updated>
+      <workItem from="1724535211211" duration="2809000" />
+      <workItem from="1724550727947" duration="45049000" />
+    </task>
+    <task id="LOCAL-00001" summary="pratica-off1-progDistribuida">
+      <option name="closed" value="true" />
+      <created>1724618977326</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724618977326</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="pratica-off1-progDistribuida" />
+    <option name="LAST_COMMIT_MESSAGE" value="pratica-off1-progDistribuida" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>73</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="145" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="146" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>75</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>53</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>51</line>
+          <properties class="CarStoreGatewayImpl" method="registerUser">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

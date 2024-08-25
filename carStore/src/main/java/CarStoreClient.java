@@ -98,7 +98,7 @@ public class CarStoreClient {
         USER_POLICY policy = USER_POLICY.valueOf(scanner.nextLine().toUpperCase());
 
         try {
-            CreateUserRequest registerRequest = new CreateUserRequest(username, password, USER_POLICY.CUSTOMER);
+            CreateUserRequest registerRequest = new CreateUserRequest(username, password, policy);
             Response response = Response.fromString(gateway.registerUser(registerRequest.toString()));
             if (response.responseCode() == RESPONSE_CODE.OK) {
                 System.out.println("Registration successful.");
@@ -113,18 +113,115 @@ public class CarStoreClient {
     private static void userMenu() {
         while (isLoggedIn) {
             System.out.println("User Menu:");
-            System.out.println("1. Logout");
-            System.out.print("Choose an option (1): ");
+            System.out.println("1. Search Car by Model");
+            System.out.println("2. Search Car by Renavam");
+            System.out.println("3. View All Cars");
+            System.out.println("4. Buy Car");
+            System.out.println("5. Delete Car");
+            System.out.println("6. Logout");
+            System.out.print("Choose an option (1-6): ");
             int choice = Integer.parseInt(scanner.nextLine());
 
             switch (choice) {
                 case 1:
+                    searchCarByModel();
+                    break;
+                case 2:
+                    searchCarByRenavam();
+                    break;
+                case 3:
+                    viewAllCars();
+                    break;
+                case 4:
+                    buyCar();
+                    break;
+                case 5:
+                    deleteCar();
+                    break;
+                case 6:
                     logout();
                     break;
                 default:
                     System.out.println("Invalid choice. Please try again.");
                     break;
             }
+        }
+    }
+
+    private static void searchCarByModel() {
+        System.out.print("Enter car model: ");
+        String model = scanner.nextLine();
+
+        try {
+            Response response = Response.fromString(gateway.searchCarByModel(model));
+            if (response.responseCode() == RESPONSE_CODE.OK) {
+                System.out.println("Cars found:\n" + response.message());
+            } else {
+                System.out.println("No cars found: " + response.message());
+            }
+        } catch (Exception e) {
+            System.out.println("An error occurred during search: " + e.getMessage());
+        }
+    }
+
+    private static void searchCarByRenavam() {
+        System.out.print("Enter car Renavam: ");
+        String renavam = scanner.nextLine();
+
+        try {
+            Response response = Response.fromString(gateway.searchCarByRenavam(renavam));
+            if (response.responseCode() == RESPONSE_CODE.OK) {
+                System.out.println("Car found:\n" + response.message());
+            } else {
+                System.out.println("No car found: " + response.message());
+            }
+        } catch (Exception e) {
+            System.out.println("An error occurred during search: " + e.getMessage());
+        }
+    }
+
+    private static void viewAllCars() {
+        try {
+            Response response = Response.fromString(gateway.getAllCars());
+            if (response.responseCode() == RESPONSE_CODE.OK) {
+                System.out.println("All available cars:\n" + response.message());
+            } else {
+                System.out.println("Failed to retrieve cars: " + response.message());
+            }
+        } catch (Exception e) {
+            System.out.println("An error occurred while retrieving cars: " + e.getMessage());
+        }
+    }
+
+    private static void buyCar() {
+        System.out.print("Enter car Renavam to buy: ");
+        String renavam = scanner.nextLine();
+
+        try {
+            Response response = Response.fromString(gateway.buyCar(renavam));
+            if (response.responseCode() == RESPONSE_CODE.OK) {
+                System.out.println("Car purchased successfully.");
+            } else {
+                System.out.println("Failed to purchase car: " + response.message());
+            }
+        } catch (Exception e) {
+            System.out.println("An error occurred during purchase: " + e.getMessage());
+        }
+    }
+
+    private static void deleteCar() {
+        System.out.print("Enter car Renavam to delete: ");
+        String renavam = scanner.nextLine();
+
+        try {
+            Response response = Response.fromString(gateway.deleteCar(renavam));
+            if (response.responseCode() == RESPONSE_CODE.OK) {
+                System.out.println("Car deleted successfully.");
+            } else {
+                System.out.println("Failed to delete car: " + response.message());
+            }
+        } catch (Exception e) {
+            System.out.println("An error occurred during deletion: " + e.getMessage());
         }
     }
 

@@ -1,6 +1,6 @@
 package BD;
 import model.DTO.Login;
-import userBDProtocols.UserBDProtocolInterface;
+import userDBProtocols.UsersDBProtocolInterface;
 import utils.Log;
 import model.DTO.CreateUserRequest;
 import model.DTO.RESPONSE_CODE;
@@ -17,7 +17,7 @@ import java.util.UUID;
 import java.util.concurrent.ConcurrentSkipListMap;
 import java.util.function.Supplier;
 
-public class ProtocolUsersDBImpl extends UnicastRemoteObject implements UserBDProtocolInterface, Serializable {
+public class ProtocolUsersDBImpl extends UnicastRemoteObject implements UsersDBProtocolInterface, Serializable {
     private static final long serialVersionUID = 1L;
     private ConcurrentSkipListMap<String, Users> db;
     private Supplier<String> filePathSupplier;

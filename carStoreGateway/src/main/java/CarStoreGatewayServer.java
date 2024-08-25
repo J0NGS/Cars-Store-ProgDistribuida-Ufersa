@@ -18,10 +18,13 @@ public class CarStoreGatewayServer {
                 int port = Integer.parseInt(scanner.nextLine());
 
                 // Prompt the user to enter the Discovery Server address for User Service
-                System.out.print("Enter the address of the Users Service Discovery Server (e.g., 192.168.1.101): ");
+                System.out.print("Enter the address of the -USERS- Service Discovery Server (e.g., 192.168.1.101): ");
                 String userServiceDiscoveryAddress = scanner.nextLine();
+                System.out.print("Enter the address of the -CARS- Service Discovery Server (e.g., 192.168.1.101): ");
+                String carsServiceDiscoveryAddress = scanner.nextLine();
 
                 userServiceDiscoveryAddress = "rmi://" + userServiceDiscoveryAddress + "/carStoreUsersServiceDiscovery";
+                carsServiceDiscoveryAddress = "rmi://" + carsServiceDiscoveryAddress + "/carStoreCarsServiceDiscovery";
                 // Set the RMI name for the service
                 String serviceName = "rmi://localhost:" + port + "/CarStoreGateway";
 
@@ -47,7 +50,7 @@ public class CarStoreGatewayServer {
                 }
 
                 // Gateway implementation with the provided Discovery Server address
-                CarStoreGatewayInterface gateway = new CarStoreGatewayImpl(userServiceDiscoveryAddress);
+                CarStoreGatewayInterface gateway = new CarStoreGatewayImpl(userServiceDiscoveryAddress, carsServiceDiscoveryAddress);
 
                 // Register and bind the gateway to the RMI name
                 Naming.rebind(serviceName, gateway);

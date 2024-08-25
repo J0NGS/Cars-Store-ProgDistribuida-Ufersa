@@ -1,6 +1,6 @@
 import BD.ProtocolUsersDBImpl;
 import discoveryInterface.DiscoveryServerInterface;
-import userBDProtocols.UserBDProtocolInterface;
+import userDBProtocols.UsersDBProtocolInterface;
 
 import java.net.InetAddress;
 import java.rmi.Naming;
@@ -43,7 +43,7 @@ public class ServerUsersDB {
                 }
 
                 // protocol implementation
-                UserBDProtocolInterface protocol = new ProtocolUsersDBImpl();
+                UsersDBProtocolInterface protocol = new ProtocolUsersDBImpl();
 
                 // register and bind the protocol
                 Naming.rebind(name, protocol);

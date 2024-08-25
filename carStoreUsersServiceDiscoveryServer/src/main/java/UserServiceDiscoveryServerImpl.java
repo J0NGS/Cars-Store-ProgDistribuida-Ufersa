@@ -28,6 +28,11 @@ public class UserServiceDiscoveryServerImpl extends UnicastRemoteObject implemen
     }
 
     @Override
+    public void registerInstance(String serviceName, String address, int weight) throws RemoteException {
+
+    }
+
+    @Override
     public void deregisterInstance(String serviceName) throws RemoteException {
         serviceInstances.remove(serviceName);
         System.out.println("Instance deregistered: " + serviceName);

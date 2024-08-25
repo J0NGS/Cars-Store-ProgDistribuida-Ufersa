@@ -1,5 +1,5 @@
 import discoveryInterface.DiscoveryServerInterface;
-import userBDProtocols.UserBDProtocolInterface;
+import userDBProtocols.UsersDBProtocolInterface;
 import usersServiceProtocols.UsersServiceProtocolInterface;
 import model.DTO.*;
 import utils.Log;
@@ -17,7 +17,7 @@ public class ProtocolUsersServiceImpl extends UnicastRemoteObject implements Use
     private static final long serialVersionUID = 1L;
     private final Queue<String> requestQueue;
     private final ExecutorService executorService;
-    private final Supplier<UserBDProtocolInterface> dbInterfaceSupplier;
+    private final Supplier<UsersDBProtocolInterface> dbInterfaceSupplier;
     private final Log serviceLogger;
 
     public ProtocolUsersServiceImpl(String discoveryServerAddress) throws RemoteException {
@@ -37,7 +37,7 @@ public class ProtocolUsersServiceImpl extends UnicastRemoteObject implements Use
                 DiscoveryServerInterface discoveryServer = (DiscoveryServerInterface) Naming.lookup(discoveryServerName);
                 // Obtendo o dbAdress do DiscoveryServer
                 String dbAddress = discoveryServer.getInstace();
-                return (UserBDProtocolInterface) Naming.lookup(dbAddress);
+                return (UsersDBProtocolInterface) Naming.lookup(dbAddress);
             } catch (Exception e) {
                 serviceLogger.logError(() -> "Error connecting to DiscoveryServer: " + e.getMessage());
                 throw new RuntimeException("Error connecting to UserDB", e);
@@ -90,6 +90,6 @@ public class ProtocolUsersServiceImpl extends UnicastRemoteObject implements Use
 
     @FunctionalInterface
     private interface RequestHandler {
-        String handle(UserBDProtocolInterface db) throws RemoteException;
+        String handle(UsersDBProtocolInterface db) throws RemoteException;
     }
 }
