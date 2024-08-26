@@ -30,6 +30,11 @@ public class CarStoreUsersDBDiscoveryServerImpl extends UnicastRemoteObject impl
         System.out.println("Instance registered: " + serviceName + " at " + address);
     }
 
+    @Override
+    public void registerInstance(String serviceName, String address, int weight) throws RemoteException {
+
+    }
+
     // deregister an instance
     @Override
     public void deregisterInstance(String serviceName) throws RemoteException {

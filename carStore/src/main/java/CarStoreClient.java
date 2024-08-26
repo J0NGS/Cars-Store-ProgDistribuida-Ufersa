@@ -100,7 +100,7 @@ public class CarStoreClient {
         try {
             CreateUserRequest registerRequest = new CreateUserRequest(username, password, policy);
             Response response = Response.fromString(gateway.registerUser(registerRequest.toString()));
-            if (response.responseCode() == RESPONSE_CODE.OK) {
+            if (response.responseCode() == RESPONSE_CODE.CREATED) {
                 System.out.println("Registration successful.");
             } else {
                 System.out.println("Registration failed: " + response.message());
