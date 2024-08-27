@@ -77,7 +77,6 @@ public class ServerCarsDB {
                         e.printStackTrace();
                     }
                 }).start();
-
                 // Exit the loop after successful start
                 break;
 

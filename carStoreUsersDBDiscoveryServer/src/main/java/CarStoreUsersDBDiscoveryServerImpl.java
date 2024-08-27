@@ -1,4 +1,6 @@
 import discoveryInterface.DiscoveryServerInterface;
+import model.DTO.RESPONSE_CODE;
+import model.DTO.Response;
 
 import java.io.Serial;
 import java.rmi.Naming;
@@ -65,7 +67,7 @@ public class CarStoreUsersDBDiscoveryServerImpl extends UnicastRemoteObject impl
     @Override
     public String loadBalance() throws RemoteException {
         // no implementation needed for round-robin; selection is handled in getInstance()
-        return null;
+        return new Response(RESPONSE_CODE.NOT_IMPLEMENTED, RESPONSE_CODE.NOT_IMPLEMENTED.getDescription()).toString();
     }
 
     @Override

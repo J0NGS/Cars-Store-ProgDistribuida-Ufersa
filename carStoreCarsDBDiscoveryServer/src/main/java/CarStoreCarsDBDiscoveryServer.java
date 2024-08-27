@@ -39,7 +39,8 @@ public class CarStoreCarsDBDiscoveryServer {
                 System.out.println("Discovery Server started at " + ip + ":" + port);
                 System.out.println("Waiting for registration requests...");
                 System.out.println("--------------------------------------------");
-
+                Thread.sleep(25000);
+                System.out.println(discoveryServer.getInstace());
                 // exit loop after successfully starting
                 break;
 

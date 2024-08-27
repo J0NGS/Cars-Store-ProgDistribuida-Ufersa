@@ -88,6 +88,33 @@ public class CarStoreGatewayImpl extends UnicastRemoteObject implements CarStore
     }
 
     @Override
+    public String updatePassword(String request) throws RemoteException {
+        return handleUserRequest(request, userService -> userService.updatePassword(request));
+    }
+
+    @Override
+    public String updateUsername(String request) throws RemoteException {
+        return handleUserRequest(request, userService -> userService.updateUsername(request));
+    }
+
+
+    @Override
+    public String deleteUser(String request) throws RemoteException {
+        return handleUserRequest(request, userService -> userService.deleteUser(request));
+
+    }
+
+    @Override
+    public String registerCar(String request) throws RemoteException {
+        return handleCarRequest(request, carService -> carService.registerCar(request));
+    }
+
+    @Override
+    public String updateCar(String request) throws RemoteException {
+        return handleCarRequest(request, carService -> carService.updateCar(request));
+    }
+
+    @Override
     public String searchCarByModel(String request) throws RemoteException {
         return handleCarRequest(request, carService -> carService.searchByCarName(request));
     }

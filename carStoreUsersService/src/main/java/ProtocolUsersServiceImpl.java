@@ -1,4 +1,5 @@
 import discoveryInterface.DiscoveryServerInterface;
+import model.Users;
 import userDBProtocols.UsersDBProtocolInterface;
 import usersServiceProtocols.UsersServiceProtocolInterface;
 import model.DTO.*;
@@ -67,13 +68,48 @@ public class ProtocolUsersServiceImpl extends UnicastRemoteObject implements Use
 
     @Override
     public String updatePassword(String request) throws RemoteException {
-        return handleRequest(request, db -> db.update(request));
+        return handleRequest(request, db -> {
+            UpdatePasswordRequest passwordRequest = UpdatePasswordRequest.fromString(request);
+            // Busca o usuário atual
+            Users user = Users.fromString(db.read(passwordRequest.login()));
+            if (user == null) {
+                return new Response(RESPONSE_CODE.NOT_FOUND, "User not found").toString();
+            }
+            // Atualiza a senha
+            user.setPassword(passwordRequest.newPassword());
+            // Persiste a alteração
+            return db.update(user.toString());
+        });
     }
+
+    @Override
+    public String updateUsername(String request) throws RemoteException {
+        return handleRequest(request, db -> {
+            UpdateUsernameRequest usernameRequest = UpdateUsernameRequest.fromString(request);
+            // Busca o usuário atual
+            Users user = Users.fromString(db.read(usernameRequest.login()));
+            if (user == null) {
+                return new Response(RESPONSE_CODE.NOT_FOUND, "User not found").toString();
+            }
+            // Verifica se o novo login já existe
+            if (db.searchByLogin(usernameRequest.newUsername()) != null) {
+                return new Response(RESPONSE_CODE.CONFLICT, "Username already exists").toString();
+            }
+            // Atualiza o login
+            user.setLogin(usernameRequest.newUsername());
+            // Persiste a alteração
+            return db.update(user.toString());
+        });
+    }
+
+
+
 
     @Override
     public Integer getQueueSize() throws RemoteException {
         return requestQueue.size();
     }
+
 
     private String handleRequest(String request, RequestHandler handler) {
         try {

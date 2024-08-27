@@ -14,16 +14,22 @@ public record Response(RESPONSE_CODE responseCode, String message) {
     }
 
     public static Response fromString(String str) {
-        // Regex para extrair os valores dos campos com o formato correto
-        Pattern pattern = Pattern.compile("Response\\{responseCode=([A-Z_]+), message='([^']*)'\\}");
-        Matcher matcher = pattern.matcher(str);
+        // Primeiro, encontramos o índice de separação entre responseCode e message
+        int responseCodeStart = str.indexOf("responseCode=") + "responseCode=".length();
+        int messageStart = str.indexOf(", message='") + ", message='".length();
 
-        if (matcher.matches()) {
-            RESPONSE_CODE responseCode = RESPONSE_CODE.valueOf(matcher.group(1));
-            String message = matcher.group(2);
-            return new Response(responseCode, message);
+        if (responseCodeStart == -1 || messageStart == -1) {
+            throw new IllegalArgumentException("Invalid string format");
         }
 
-        throw new IllegalArgumentException("Invalid string format");
+        // Extrair responseCode e message
+        String responseCodeStr = str.substring(responseCodeStart, str.indexOf(',', responseCodeStart)).trim();
+        String messageStr = str.substring(messageStart, str.lastIndexOf("'")).trim();
+
+        // Converter responseCode para enum
+        RESPONSE_CODE responseCode = RESPONSE_CODE.valueOf(responseCodeStr);
+
+        return new Response(responseCode, messageStr);
     }
+
 }

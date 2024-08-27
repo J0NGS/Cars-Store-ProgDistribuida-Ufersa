@@ -40,8 +40,6 @@ public class CarStoreCarsServiceDiscoveryServer {
                 System.out.println("CarsService Discovery Server started at " + ip + ":" + port);
                 System.out.println("Waiting for registration requests...");
                 System.out.println("--------------------------------------------");
-                Thread.sleep(20000);
-                System.out.println("instance->" + discoveryServer.getInstace());
                 // Sair do loop após iniciar com sucesso
                 break;
 

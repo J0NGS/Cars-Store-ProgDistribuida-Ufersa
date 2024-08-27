@@ -12,7 +12,9 @@ public interface CarsServiceProtocolInterface extends Remote {
 
     String deleteCar(String request) throws RemoteException;
 
-    String updateCarPrice(String request) throws RemoteException;
+    String updateCar(String request) throws RemoteException;
+
+    String updatePrice(String request) throws RemoteException;
 
     Integer getQueueSize() throws RemoteException;
 

@@ -1,6 +1,7 @@
 package BD;
 
 import carsDBProtocols.CarsDBProtocolInterface;
+import model.CAR_CATEGORY;
 import model.Cars;
 import model.DTO.*;
 import utils.Log;
@@ -49,8 +50,40 @@ public class ProtocolCarsDBImpl extends UnicastRemoteObject implements CarsDBPro
             loadDatabase(filePath);
         } else {
             db = new ConcurrentHashMap<>();
+            initializeDefaultCars();
             saveDbToFile();
-            carsDBLogger.logInfo(() -> "new db created, root path is-> " + filePath);
+            carsDBLogger.logInfo(() -> "new db created with default cars, root path is -> " + filePath);
+        }
+    }
+
+    private void initializeDefaultCars() {
+        Cars[] defaultCars = {
+                new Cars(UUID.randomUUID(), "Toyota Corolla", CAR_CATEGORY.ECONOMIC, 2020, 80000, "12345678901"),
+                new Cars(UUID.randomUUID(), "Honda Civic", CAR_CATEGORY.ECONOMIC, 2019, 85000, "23456789012"),
+                new Cars(UUID.randomUUID(), "Ford Fusion", CAR_CATEGORY.EXECUTIVE, 2021, 120000, "34567890123"),
+                new Cars(UUID.randomUUID(), "BMW 320i", CAR_CATEGORY.EXECUTIVE, 2020, 150000, "45678901234"),
+                new Cars(UUID.randomUUID(), "Mercedes-Benz C-Class", CAR_CATEGORY.EXECUTIVE, 2021, 180000, "56789012345"),
+                new Cars(UUID.randomUUID(), "Audi A4", CAR_CATEGORY.EXECUTIVE, 2020, 160000, "67890123456"),
+                new Cars(UUID.randomUUID(), "Chevrolet Onix", CAR_CATEGORY.ECONOMIC, 2022, 60000, "78901234567"),
+                new Cars(UUID.randomUUID(), "Volkswagen Polo", CAR_CATEGORY.INTERMEDIARY, 2021, 70000, "89012345678"),
+                new Cars(UUID.randomUUID(), "Hyundai HB20", CAR_CATEGORY.ECONOMIC, 2020, 65000, "90123456789"),
+                new Cars(UUID.randomUUID(), "Jeep Compass", CAR_CATEGORY.INTERMEDIARY, 2021, 130000, "01234567890"),
+                new Cars(UUID.randomUUID(), "Nissan Sentra", CAR_CATEGORY.INTERMEDIARY, 2019, 90000, "12345098765"),
+                new Cars(UUID.randomUUID(), "Kia Seltos", CAR_CATEGORY.INTERMEDIARY, 2020, 100000, "23456098765"),
+                new Cars(UUID.randomUUID(), "Mazda CX-5", CAR_CATEGORY.INTERMEDIARY, 2021, 110000, "34567098765"),
+                new Cars(UUID.randomUUID(), "Subaru Impreza", CAR_CATEGORY.ECONOMIC, 2019, 80000, "45678098765"),
+                new Cars(UUID.randomUUID(), "Tesla Model 3", CAR_CATEGORY.EXECUTIVE, 2021, 220000, "56789098765"),
+                new Cars(UUID.randomUUID(), "Volvo XC40", CAR_CATEGORY.EXECUTIVE, 2020, 170000, "67890098765"),
+                new Cars(UUID.randomUUID(), "Jaguar XE", CAR_CATEGORY.EXECUTIVE, 2021, 250000, "78901098765"),
+                new Cars(UUID.randomUUID(), "Land Rover Evoque", CAR_CATEGORY.EXECUTIVE, 2020, 270000, "89012098765"),
+                new Cars(UUID.randomUUID(), "Alfa Romeo Giulia", CAR_CATEGORY.EXECUTIVE, 2019, 280000, "90123098765"),
+                new Cars(UUID.randomUUID(), "Lexus IS", CAR_CATEGORY.EXECUTIVE, 2021, 200000, "01234098765"),
+        };
+
+        for (Cars car : defaultCars) {
+            db.computeIfAbsent(car.getName(), k -> new ConcurrentHashMap<>())
+                    .computeIfAbsent(car.getYearOfManufacture(), k -> new CopyOnWriteArrayList<>())
+                    .add(car);
         }
     }
 

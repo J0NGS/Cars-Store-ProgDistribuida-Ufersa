@@ -31,7 +31,7 @@
                 <configuration>
                     <archive>
                         <manifestEntries>
-                            <Main-Class>ServerCarsDBDiscoveryServer</Main-Class>
+                            <Main-Class>CarStoreCarsDBDiscoveryServer</Main-Class>
                         </manifestEntries>
                     </archive>
                 </configuration>
@@ -43,7 +43,7 @@
                 <configuration>
                     <archive>
                         <manifestEntries>
-                            <Main-Class>ServerCarsDBDiscoveryServer</Main-Class>
+                            <Main-Class>CarStoreCarsDBDiscoveryServer</Main-Class>
                         </manifestEntries>
                     </archive>
                     <descriptorRefs>

@@ -1,7 +1,12 @@
-import discoveryInterface.DiscoveryServerInterface;
+
 import carsDBProtocols.CarsDBProtocolInterface;
 import carsServiceProtocols.CarsServiceProtocolInterface;
-import model.DTO.*;
+import discoveryInterface.DiscoveryServerInterface;
+import model.Cars;
+import model.DTO.RESPONSE_CODE;
+import model.DTO.Response;
+import model.DTO.UpdateCarPriceRequest;
+import model.DTO.UpdateCarRequest;
 import utils.Log;
 
 import java.io.Serial;
@@ -66,13 +71,43 @@ public class ProtocolCarsServiceImpl extends UnicastRemoteObject implements Cars
     }
 
     @Override
-    public String updateCarPrice(String request) throws RemoteException {
-        return handleRequest(request, db -> db.update(request));
+    public String updateCar(String request) throws RemoteException {
+        return handleRequest(request, db -> {
+            UpdateCarRequest carRequest = UpdateCarRequest.fromString(request);
+            // Busca o carro atual pelo RENAVAM
+            Cars existingCar = Cars.fromString(db.read(carRequest.renavam()));
+            if (existingCar == null) {
+                return new Response(RESPONSE_CODE.NOT_FOUND, "Car not found").toString();
+            }
+            // Remove o carro antigo
+            db.delete(carRequest.renavam());
+            // Cria um novo carro com os detalhes atualizados
+            return db.create(carRequest.toString());
+        });
     }
+
+
+    @Override
+    public String updatePrice(String request) throws RemoteException {
+        return handleRequest(request, db -> {
+            UpdateCarPriceRequest priceRequest = UpdateCarPriceRequest.fromString(request);
+            // Busca o carro pelo RENAVAM
+            Cars car = Cars.fromString(db.read(priceRequest.renavam()));
+            if (car == null) {
+                return new Response(RESPONSE_CODE.NOT_FOUND, "Car not found").toString();
+            }
+            // Atualiza o preço
+            car.setPrice(priceRequest.newPrice());
+            // Persiste a alteração
+            return db.update(car.toString());
+        });
+    }
+
+
 
     @Override
     public String getAllCars() throws RemoteException {
-        return handleRequest(null, db -> db.getAll());
+        return handleRequest("", CarsDBProtocolInterface::getAll);
     }
     @Override
     public Integer getQueueSize() throws RemoteException {
@@ -91,6 +126,7 @@ public class ProtocolCarsServiceImpl extends UnicastRemoteObject implements Cars
             return new Response(RESPONSE_CODE.INTERNAL_SERVER_ERROR, e.getMessage()).toString();
         }
     }
+
 
     @FunctionalInterface
     private interface RequestHandler {

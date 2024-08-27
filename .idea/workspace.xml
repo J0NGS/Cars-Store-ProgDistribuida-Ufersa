@@ -5,9 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d149b0c9-2076-49f6-84cb-3e572e3b509d" name="Changes" comment="finish">
+      <change afterPath="$PROJECT_DIR$/carStoreProtocols/src/main/java/model/DTO/UpdateCarPriceRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carStoreProtocols/src/main/java/model/DTO/UpdateCarRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carStoreProtocols/src/main/java/model/DTO/UpdatePasswordRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carStoreProtocols/src/main/java/model/DTO/UpdateUsernameRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStore/src/main/java/CarStoreClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStore/src/main/java/CarStoreClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStore/target/classes/CarStoreClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStore/target/classes/CarStoreClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreCarsDB/src/main/java/BD/ProtocolCarsDBImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsDB/src/main/java/BD/ProtocolCarsDBImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreCarsDB/src/main/java/ServerCarsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsDB/src/main/java/ServerCarsDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreCarsDB/target/classes/BD/ProtocolCarsDBImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsDB/target/classes/BD/ProtocolCarsDBImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreCarsDB/target/classes/ServerCarsDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsDB/target/classes/ServerCarsDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreCarsDBDiscoveryServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsDBDiscoveryServer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreCarsDBDiscoveryServer/src/main/java/CarStoreCarsDBDiscoveryServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsDBDiscoveryServer/src/main/java/CarStoreCarsDBDiscoveryServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreCarsDBDiscoveryServer/target/classes/CarStoreCarsDBDiscoveryServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsDBDiscoveryServer/target/classes/CarStoreCarsDBDiscoveryServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreCarsDBDiscoveryServer/target/classes/CarStoreCarsDBDiscoveryServerImpl$InstanceDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsDBDiscoveryServer/target/classes/CarStoreCarsDBDiscoveryServerImpl$InstanceDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreCarsDBDiscoveryServer/target/classes/CarStoreCarsDBDiscoveryServerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsDBDiscoveryServer/target/classes/CarStoreCarsDBDiscoveryServerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreCarsServIce/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreCarsServIce/src/main/java/CarsServiceServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsService/src/main/java/CarsServiceServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreCarsServIce/src/main/java/ProtocolCarsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsService/src/main/java/ProtocolCarsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreCarsServIce/target/classes/CarsServiceServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreCarsServIce/target/classes/ProtocolCarsServiceImpl$RequestHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreCarsServIce/target/classes/ProtocolCarsServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreCarsServiceDiscoveryServer/src/main/java/CarStoreCarsServiceDiscoveryServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsServiceDiscoveryServer/src/main/java/CarStoreCarsServiceDiscoveryServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreCarsServiceDiscoveryServer/target/classes/CarStoreCarsServiceDiscoveryServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsServiceDiscoveryServer/target/classes/CarStoreCarsServiceDiscoveryServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreCarsServiceDiscoveryServer/target/classes/CarsServiceDiscoveryServerImpl$QueueSizeResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsServiceDiscoveryServer/target/classes/CarsServiceDiscoveryServerImpl$QueueSizeResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreCarsServiceDiscoveryServer/target/classes/CarsServiceDiscoveryServerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsServiceDiscoveryServer/target/classes/CarsServiceDiscoveryServerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreGateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreGateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreGateway/target/classes/CarStoreGatewayImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreGateway/target/classes/CarStoreGatewayImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreGateway/target/classes/CarStoreGatewayServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreGateway/target/classes/CarStoreGatewayServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreProtocols/src/main/java/carStoreGatewayInterface/CarStoreGatewayInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreProtocols/src/main/java/carStoreGatewayInterface/CarStoreGatewayInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreProtocols/src/main/java/carsServiceProtocols/CarsServiceProtocolInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreProtocols/src/main/java/carsServiceProtocols/CarsServiceProtocolInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreProtocols/src/main/java/model/DTO/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreProtocols/src/main/java/model/DTO/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreProtocols/src/main/java/usersServiceProtocols/UsersServiceProtocolInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreProtocols/src/main/java/usersServiceProtocols/UsersServiceProtocolInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/carStoreUsersDBDiscoveryServer/src/main/java/CarStoreUsersDBDiscoveryServerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreUsersDBDiscoveryServer/src/main/java/CarStoreUsersDBDiscoveryServerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreUsersDBDiscoveryServer/target/carStoreUsersDBDiscoveryServer-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreUsersDBDiscoveryServer/target/carStoreUsersDBDiscoveryServer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreUsersDBDiscoveryServer/target/carStoreUsersDBDiscoveryServer-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreUsersDBDiscoveryServer/target/classes/CarStoreUsersDBDiscoveryServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreUsersDBDiscoveryServer/target/classes/CarStoreUsersDBDiscoveryServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/carStoreUsersDBDiscoveryServer/target/classes/CarStoreUsersDBDiscoveryServerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreUsersDBDiscoveryServer/target/classes/CarStoreUsersDBDiscoveryServerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreUsersService/src/main/java/ProtocolUsersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreUsersService/src/main/java/ProtocolUsersServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carStoreUsersServiceDiscoveryServer/target/classes/CarStoreUsersServiceDiscoveryServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreUsersServiceDiscoveryServer/target/classes/CarStoreUsersServiceDiscoveryServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/carStoreUsersServiceDiscoveryServer/target/classes/UserServiceDiscoveryServerImpl$QueueSizeResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreUsersServiceDiscoveryServer/target/classes/UserServiceDiscoveryServerImpl$QueueSizeResult.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/carStoreUsersServiceDiscoveryServer/target/classes/UserServiceDiscoveryServerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreUsersServiceDiscoveryServer/target/classes/UserServiceDiscoveryServerImpl.class" afterDir="false" />
     </list>
@@ -19,8 +58,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Record" />
         <option value="Interface" />
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -41,7 +80,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -60,14 +99,21 @@
     "Application.CarStoreUsersDBDiscoveryServer.executor": "Run",
     "Application.CarStoreUsersServiceDiscoveryServer.executor": "Run",
     "Application.CarsServiceServer.executor": "Run",
+    "Application.Main.executor": "Run",
     "Application.ServerCarsDB.executor": "Run",
     "Application.ServerUsersDB.executor": "Run",
     "Application.UserServiceServer.executor": "Run",
+    "Application.carStoreCarsServiceDiscoveryServer.executor": "Run",
+    "Application.carStoreUserDB.executor": "Run",
+    "Application.carStoreUsersDBDiscoveryServer.executor": "Run",
+    "Application.carStoreUsersServiceDiscoveryServer.executor": "Run",
+    "Application.main.executor": "Run",
     "Attach to process.pid 20828.executor": "ProcessAttachDebug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Documentos/Projetos/Ufersa/ProgDistribuida/carStoreCarsServIce",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,24 +122,33 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "build.tools",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Documentos\Projetos\Ufersa\ProgDistribuida\carStoreService\src\main\java" />
       <recent name="D:\Documentos\Projetos\Ufersa\ProgDistribuida\carStoreCarsServoce\src\main\java" />
       <recent name="D:\Documentos\Projetos\Ufersa\ProgDistribuida\carStore\src\main\java" />
     </key>
   </component>
   <component name="RunManager" selected="Application.CarStoreClient">
-    <configuration name="CarStoreClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="CarStoreCarsDBDiscoveryServer" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="CarStoreCarsDBDiscoveryServer" />
+      <module name="carStoreCarsDBDiscoveryServer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarStoreClient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CarStoreClient" />
       <module name="carStore" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarStoreGatewayServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="CarStoreGatewayServer" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CarStoreGatewayServer" />
       <module name="carStoreGateway" />
       <method v="2">
@@ -107,27 +162,93 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServerCarsDB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="model.DTO.Main" />
+      <module name="carStoreProtocols" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.DTO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerCarsDB" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ServerCarsDB" />
       <module name="carStoreCarsDB" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceServer" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="UserServiceServer" />
       <module name="carStoreUsersService" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="carStoreCarsServiceDiscoveryServer" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="CarStoreCarsServiceDiscoveryServer" />
+      <module name="carStoreCarsServiceDiscoveryServer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="carStoreUserDB" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ServerUsersDB" />
+      <module name="carStoreUserDB" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="carStoreUsersDBDiscoveryServer" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="CarStoreUsersDBDiscoveryServer" />
+      <module name="carStoreUsersDBDiscoveryServer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="carStoreUsersServiceDiscoveryServer" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="CarStoreUsersServiceDiscoveryServer" />
+      <module name="carStoreUsersServiceDiscoveryServer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="model.DTO.main" />
+      <module name="carStoreProtocols" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.DTO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.CarStoreCarsDBDiscoveryServer" />
+      <item itemvalue="Application.CarStoreClient" />
+      <item itemvalue="Application.carStoreUserDB" />
+      <item itemvalue="Application.carStoreUsersDBDiscoveryServer" />
+      <item itemvalue="Application.CarStoreGatewayServer" />
+      <item itemvalue="Application.ServerCarsDB" />
+      <item itemvalue="Application.UserServiceServer" />
+      <item itemvalue="Application.carStoreUsersServiceDiscoveryServer" />
+      <item itemvalue="Application.carStoreCarsServiceDiscoveryServer" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.main" />
+      <item itemvalue="Application.CarsServiceServer" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CarStoreClient" />
-        <item itemvalue="Application.ServerCarsDB" />
-        <item itemvalue="Application.CarStoreGatewayServer" />
-        <item itemvalue="Application.UserServiceServer" />
         <item itemvalue="Application.CarsServiceServer" />
+        <item itemvalue="Application.main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +269,14 @@
       <option name="presentableId" value="Default" />
       <updated>1724535210117</updated>
       <workItem from="1724535211211" duration="2809000" />
-      <workItem from="1724550727947" duration="47592000" />
+      <workItem from="1724550727947" duration="52817000" />
+      <workItem from="1724646313850" duration="6976000" />
+      <workItem from="1724708428518" duration="631000" />
+      <workItem from="1724709206916" duration="33000" />
+      <workItem from="1724709255245" duration="31000" />
+      <workItem from="1724711613016" duration="1951000" />
+      <workItem from="1724713621543" duration="3826000" />
+      <workItem from="1724725290822" duration="6262000" />
     </task>
     <task id="LOCAL-00001" summary="pratica-off1-progDistribuida">
       <option name="closed" value="true" />
@@ -166,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724626752098</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="finish">
+      <option name="closed" value="true" />
+      <created>1724641190549</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724641190549</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,5 +312,472 @@
     <MESSAGE value="pratica-off1-progDistribuida" />
     <MESSAGE value="finish" />
     <option name="LAST_COMMIT_MESSAGE" value="finish" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreUserDB/src/main/java/ServerUsersDB.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreUserDB/src/main/java/ServerUsersDB.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreUserDB/src/main/java/ServerUsersDB.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreUserDB/src/main/java/ServerUsersDB.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreCarsDB/src/main/java/BD/ProtocolCarsDBImpl.java</url>
+          <line>174</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreCarsDB/src/main/java/BD/ProtocolCarsDBImpl.java</url>
+          <line>176</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreCarsDB/src/main/java/BD/ProtocolCarsDBImpl.java</url>
+          <line>178</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreCarsDB/src/main/java/BD/ProtocolCarsDBImpl.java</url>
+          <line>177</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreCarsDB/src/main/java/BD/ProtocolCarsDBImpl.java</url>
+          <line>179</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreCarsDB/src/main/java/BD/ProtocolCarsDBImpl.java</url>
+          <line>180</line>
+          <properties>
+            <option name="lambda-ordinal" value="1" />
+          </properties>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreCarsDB/src/main/java/BD/ProtocolCarsDBImpl.java</url>
+          <line>182</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreCarsDB/src/main/java/BD/ProtocolCarsDBImpl.java</url>
+          <line>184</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreCarsDB/src/main/java/BD/ProtocolCarsDBImpl.java</url>
+          <line>186</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreCarsDB/src/main/java/BD/ProtocolCarsDBImpl.java</url>
+          <line>187</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreCarsDB/src/main/java/BD/ProtocolCarsDBImpl.java</url>
+          <line>185</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreCarsDB/src/main/java/BD/ProtocolCarsDBImpl.java</url>
+          <line>188</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreCarsDB/src/main/java/BD/ProtocolCarsDBImpl.java</url>
+          <line>189</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreCarsDB/src/main/java/BD/ProtocolCarsDBImpl.java</url>
+          <line>191</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreCarsDB/src/main/java/BD/ProtocolCarsDBImpl.java</url>
+          <line>190</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>128</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>123</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>118</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>113</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>108</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>102</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>96</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>91</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>86</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>81</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>133</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>138</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>142</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>143</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>144</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>145</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>146</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>147</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>148</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>149</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>150</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>155</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>157</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>158</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>159</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>160</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>162</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>161</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>163</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>164</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>156</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>157</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/carStoreCarsDB/src/main/java/BD/ProtocolCarsDBImpl.java</url>
+          <line>175</line>
+          <properties class="BD.ProtocolCarsDBImpl" method="getAll">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/carStoreProtocols/src/main/java/carStoreGatewayInterface/CarStoreGatewayInterface.java</url>
+          <line>17</line>
+          <properties class="carStoreGatewayInterface.CarStoreGatewayInterface" method="getAllCars">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>127</line>
+          <properties class="CarStoreGatewayImpl" method="getAllCars">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>122</line>
+          <properties class="CarStoreGatewayImpl" method="searchCarByRenavam">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>117</line>
+          <properties class="CarStoreGatewayImpl" method="searchCarByModel">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>112</line>
+          <properties class="CarStoreGatewayImpl" method="updateCar">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>107</line>
+          <properties class="CarStoreGatewayImpl" method="registerCar">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>101</line>
+          <properties class="CarStoreGatewayImpl" method="deleteUser">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>95</line>
+          <properties class="CarStoreGatewayImpl" method="updateUsername">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>90</line>
+          <properties class="CarStoreGatewayImpl" method="updatePassword">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>85</line>
+          <properties class="CarStoreGatewayImpl" method="searchUserByLogin">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>80</line>
+          <properties class="CarStoreGatewayImpl" method="authenticate">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>132</line>
+          <properties class="CarStoreGatewayImpl" method="buyCar">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>137</line>
+          <properties class="CarStoreGatewayImpl" method="deleteCar">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>141</line>
+          <properties class="CarStoreGatewayImpl" method="handleUserRequest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java</url>
+          <line>154</line>
+          <properties class="CarStoreGatewayImpl" method="handleCarRequest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

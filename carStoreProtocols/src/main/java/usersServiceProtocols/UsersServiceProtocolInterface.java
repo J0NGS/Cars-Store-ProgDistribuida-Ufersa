@@ -10,4 +10,5 @@ public interface UsersServiceProtocolInterface extends Remote  {
     String deleteUser(String request) throws RemoteException;
     String updatePassword(String request) throws RemoteException;
     Integer getQueueSize() throws RemoteException;
+    String updateUsername(String request) throws RemoteException;
 }

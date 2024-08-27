@@ -74,7 +74,6 @@ public class CarsServiceServer {
                         e.printStackTrace();
                     }
                 }).start();
-
                 // Exit the loop after successfully starting
                 break;
 
