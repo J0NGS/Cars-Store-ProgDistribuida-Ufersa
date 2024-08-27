@@ -5,50 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d149b0c9-2076-49f6-84cb-3e572e3b509d" name="Changes" comment="finish">
-      <change afterPath="$PROJECT_DIR$/carStoreProtocols/src/main/java/model/DTO/UpdateCarPriceRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carStoreProtocols/src/main/java/model/DTO/UpdateCarRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carStoreProtocols/src/main/java/model/DTO/UpdatePasswordRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carStoreProtocols/src/main/java/model/DTO/UpdateUsernameRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStore/src/main/java/CarStoreClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStore/src/main/java/CarStoreClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStore/target/classes/CarStoreClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStore/target/classes/CarStoreClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreCarsDB/src/main/java/BD/ProtocolCarsDBImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsDB/src/main/java/BD/ProtocolCarsDBImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreCarsDB/src/main/java/ServerCarsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsDB/src/main/java/ServerCarsDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreCarsDB/target/classes/BD/ProtocolCarsDBImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsDB/target/classes/BD/ProtocolCarsDBImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreCarsDB/target/classes/ServerCarsDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsDB/target/classes/ServerCarsDB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreCarsDBDiscoveryServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsDBDiscoveryServer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreCarsDBDiscoveryServer/src/main/java/CarStoreCarsDBDiscoveryServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsDBDiscoveryServer/src/main/java/CarStoreCarsDBDiscoveryServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreCarsDBDiscoveryServer/target/classes/CarStoreCarsDBDiscoveryServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsDBDiscoveryServer/target/classes/CarStoreCarsDBDiscoveryServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreCarsDBDiscoveryServer/target/classes/CarStoreCarsDBDiscoveryServerImpl$InstanceDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsDBDiscoveryServer/target/classes/CarStoreCarsDBDiscoveryServerImpl$InstanceDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreCarsDBDiscoveryServer/target/classes/CarStoreCarsDBDiscoveryServerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsDBDiscoveryServer/target/classes/CarStoreCarsDBDiscoveryServerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreCarsServIce/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreCarsServIce/src/main/java/CarsServiceServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsService/src/main/java/CarsServiceServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreCarsServIce/src/main/java/ProtocolCarsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsService/src/main/java/ProtocolCarsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreCarsServIce/target/classes/CarsServiceServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreCarsServIce/target/classes/ProtocolCarsServiceImpl$RequestHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreCarsServIce/target/classes/ProtocolCarsServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreCarsServiceDiscoveryServer/src/main/java/CarStoreCarsServiceDiscoveryServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsServiceDiscoveryServer/src/main/java/CarStoreCarsServiceDiscoveryServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreCarsServiceDiscoveryServer/target/classes/CarStoreCarsServiceDiscoveryServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsServiceDiscoveryServer/target/classes/CarStoreCarsServiceDiscoveryServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreCarsServiceDiscoveryServer/target/classes/CarsServiceDiscoveryServerImpl$QueueSizeResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsServiceDiscoveryServer/target/classes/CarsServiceDiscoveryServerImpl$QueueSizeResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreCarsServiceDiscoveryServer/target/classes/CarsServiceDiscoveryServerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsServiceDiscoveryServer/target/classes/CarsServiceDiscoveryServerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreGateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreGateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreGateway/src/main/java/CarStoreGatewayImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreGateway/target/classes/CarStoreGatewayImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreGateway/target/classes/CarStoreGatewayImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreGateway/target/classes/CarStoreGatewayServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreGateway/target/classes/CarStoreGatewayServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreProtocols/src/main/java/carStoreGatewayInterface/CarStoreGatewayInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreProtocols/src/main/java/carStoreGatewayInterface/CarStoreGatewayInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreProtocols/src/main/java/carsServiceProtocols/CarsServiceProtocolInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreProtocols/src/main/java/carsServiceProtocols/CarsServiceProtocolInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreProtocols/src/main/java/model/DTO/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreProtocols/src/main/java/model/DTO/Response.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreProtocols/src/main/java/usersServiceProtocols/UsersServiceProtocolInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreProtocols/src/main/java/usersServiceProtocols/UsersServiceProtocolInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreUsersDBDiscoveryServer/src/main/java/CarStoreUsersDBDiscoveryServerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreUsersDBDiscoveryServer/src/main/java/CarStoreUsersDBDiscoveryServerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreUsersDBDiscoveryServer/target/carStoreUsersDBDiscoveryServer-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreUsersDBDiscoveryServer/target/carStoreUsersDBDiscoveryServer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreUsersDBDiscoveryServer/target/carStoreUsersDBDiscoveryServer-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreUsersDBDiscoveryServer/target/classes/CarStoreUsersDBDiscoveryServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreUsersDBDiscoveryServer/target/classes/CarStoreUsersDBDiscoveryServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreUsersDBDiscoveryServer/target/classes/CarStoreUsersDBDiscoveryServerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreUsersDBDiscoveryServer/target/classes/CarStoreUsersDBDiscoveryServerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreUsersService/src/main/java/ProtocolUsersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreUsersService/src/main/java/ProtocolUsersServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreUsersServiceDiscoveryServer/target/classes/CarStoreUsersServiceDiscoveryServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreUsersServiceDiscoveryServer/target/classes/CarStoreUsersServiceDiscoveryServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreUsersServiceDiscoveryServer/target/classes/UserServiceDiscoveryServerImpl$QueueSizeResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreUsersServiceDiscoveryServer/target/classes/UserServiceDiscoveryServerImpl$QueueSizeResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreUsersServiceDiscoveryServer/target/classes/UserServiceDiscoveryServerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreUsersServiceDiscoveryServer/target/classes/UserServiceDiscoveryServerImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,7 +233,7 @@
       <workItem from="1724709255245" duration="31000" />
       <workItem from="1724711613016" duration="1951000" />
       <workItem from="1724713621543" duration="3826000" />
-      <workItem from="1724725290822" duration="6262000" />
+      <workItem from="1724725290822" duration="6592000" />
     </task>
     <task id="LOCAL-00001" summary="pratica-off1-progDistribuida">
       <option name="closed" value="true" />
@@ -302,11 +259,30 @@
       <option name="project" value="LOCAL" />
       <updated>1724641190549</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="finish">
+      <option name="closed" value="true" />
+      <created>1724753551274</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724753551274</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pratica-off1-progDistribuida" />
