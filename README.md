@@ -3,6 +3,7 @@
 Este repositório contém o código fonte e a documentação do projeto 1 de Programação Distribuída da disciplina de Projetos da Universidade Federal Rural do Semi-Árido (UFERSA).
 
 ## Estrutura do Projeto
+![image](https://github.com/user-attachments/assets/a2b5c1c0-d578-4c0f-833c-e018afb678fd)
 # carStore
     Aplicação cliente que consome o gateway
 # carStoreCarsDB
