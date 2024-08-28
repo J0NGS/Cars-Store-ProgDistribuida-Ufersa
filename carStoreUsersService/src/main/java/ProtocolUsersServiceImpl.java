@@ -70,15 +70,15 @@ public class ProtocolUsersServiceImpl extends UnicastRemoteObject implements Use
     public String updatePassword(String request) throws RemoteException {
         return handleRequest(request, db -> {
             UpdatePasswordRequest passwordRequest = UpdatePasswordRequest.fromString(request);
-            // Busca o usuário atual
-            Users user = Users.fromString(db.read(passwordRequest.login()));
-            if (user == null) {
-                return new Response(RESPONSE_CODE.NOT_FOUND, "User not found").toString();
+            Response userBool = Response.fromString(db.read(passwordRequest.login()));
+            if (userBool.responseCode() == RESPONSE_CODE.NOT_FOUND) {
+                return userBool.toString();
             }
             // Atualiza a senha
-            user.setPassword(passwordRequest.newPassword());
+            Users user = Users.fromString(userBool.message());
+            CreateUserRequest userRequest = new CreateUserRequest(user.getLogin(), passwordRequest.newPassword(), user.getPolicy());
             // Persiste a alteração
-            return db.update(user.toString());
+            return db.update(userRequest.toString());
         });
     }
 
@@ -87,18 +87,19 @@ public class ProtocolUsersServiceImpl extends UnicastRemoteObject implements Use
         return handleRequest(request, db -> {
             UpdateUsernameRequest usernameRequest = UpdateUsernameRequest.fromString(request);
             // Busca o usuário atual
-            Users user = Users.fromString(db.read(usernameRequest.login()));
-            if (user == null) {
+            Response userBool = Response.fromString(db.read(usernameRequest.login()));
+            if (userBool.responseCode() == RESPONSE_CODE.NOT_FOUND) {
                 return new Response(RESPONSE_CODE.NOT_FOUND, "User not found").toString();
             }
             // Verifica se o novo login já existe
-            if (db.searchByLogin(usernameRequest.newUsername()) != null) {
+            if (Response.fromString(db.searchByLogin(usernameRequest.newUsername())).responseCode() == RESPONSE_CODE.FOUND) {
                 return new Response(RESPONSE_CODE.CONFLICT, "Username already exists").toString();
             }
+            Users user = Users.fromString(userBool.message());
             // Atualiza o login
-            user.setLogin(usernameRequest.newUsername());
+            CreateUserRequest userRequest = new CreateUserRequest(usernameRequest.newUsername(), user.getPassword(), user.getPolicy());
             // Persiste a alteração
-            return db.update(user.toString());
+            return db.update(userRequest.toString());
         });
     }
 

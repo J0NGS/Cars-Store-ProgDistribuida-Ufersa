@@ -3,10 +3,7 @@ import carsDBProtocols.CarsDBProtocolInterface;
 import carsServiceProtocols.CarsServiceProtocolInterface;
 import discoveryInterface.DiscoveryServerInterface;
 import model.Cars;
-import model.DTO.RESPONSE_CODE;
-import model.DTO.Response;
-import model.DTO.UpdateCarPriceRequest;
-import model.DTO.UpdateCarRequest;
+import model.DTO.*;
 import utils.Log;
 
 import java.io.Serial;
@@ -75,14 +72,15 @@ public class ProtocolCarsServiceImpl extends UnicastRemoteObject implements Cars
         return handleRequest(request, db -> {
             UpdateCarRequest carRequest = UpdateCarRequest.fromString(request);
             // Busca o carro atual pelo RENAVAM
-            Cars existingCar = Cars.fromString(db.read(carRequest.renavam()));
-            if (existingCar == null) {
+            Response existingCar = Response.fromString(db.read(carRequest.renavam()));
+            if (existingCar.responseCode() != RESPONSE_CODE.FOUND) {
                 return new Response(RESPONSE_CODE.NOT_FOUND, "Car not found").toString();
             }
             // Remove o carro antigo
             db.delete(carRequest.renavam());
             // Cria um novo carro com os detalhes atualizados
-            return db.create(carRequest.toString());
+            CreateCarRequest newCar = new CreateCarRequest(carRequest.newName(), carRequest.newCategory(), carRequest.newYear(), carRequest.newPrice(), carRequest.renavam());
+            return db.create(newCar.toString());
         });
     }
 

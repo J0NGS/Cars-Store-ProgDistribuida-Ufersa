@@ -156,21 +156,21 @@ public class ProtocolCarsDBImpl extends UnicastRemoteObject implements CarsDBPro
         }
     }
 
-    @Override
-    public String read(String renavam) throws RemoteException {
-        try {
-            return db.values().stream()
-                    .flatMap(yearMap -> yearMap.values().stream())
-                    .flatMap(CopyOnWriteArrayList::stream)
-                    .filter(car -> car.getRenavam().equals(renavam))
-                    .findFirst()
-                    .map(Cars::toString)
-                    .orElse(new Response(RESPONSE_CODE.NOT_FOUND, "Car not found").toString());
-        } catch (Exception e) {
-            carsDBLogger.logError(e::getMessage);
-            return new Response(RESPONSE_CODE.INTERNAL_SERVER_ERROR, RESPONSE_CODE.INTERNAL_SERVER_ERROR.getDescription()).toString();
-        }
+@Override
+public String read(String renavam) throws RemoteException {
+    try {
+        return db.values().stream()
+                .flatMap(yearMap -> yearMap.values().stream())
+                .flatMap(CopyOnWriteArrayList::stream)
+                .filter(car -> car.getRenavam().equals(renavam))
+                .findFirst()
+                .map(car -> new Response(RESPONSE_CODE.FOUND, car.toString()).toString())
+                .orElse(new Response(RESPONSE_CODE.NOT_FOUND, "Car not found").toString());
+    } catch (Exception e) {
+        carsDBLogger.logError(e::getMessage);
+        return new Response(RESPONSE_CODE.INTERNAL_SERVER_ERROR, RESPONSE_CODE.INTERNAL_SERVER_ERROR.getDescription()).toString();
     }
+}
 
     @Override
     public String getAll() throws RemoteException {
@@ -261,8 +261,8 @@ public class ProtocolCarsDBImpl extends UnicastRemoteObject implements CarsDBPro
     @Override
     public String update(String request) throws RemoteException {
         try {
-            CreateCarRequest carRequest = CreateCarRequest.fromString(request);
-            Cars updatedCar = new Cars(UUID.randomUUID(), carRequest.name(), carRequest.category(), carRequest.year(), carRequest.price(), carRequest.renavam());
+            UpdateCarRequest carRequest = UpdateCarRequest.fromString(request);
+            Cars updatedCar = new Cars(UUID.randomUUID(), carRequest.newName(), carRequest.newCategory(), carRequest.newYear(), carRequest.newPrice(), carRequest.renavam());
 
             delete(updatedCar.getRenavam());
 

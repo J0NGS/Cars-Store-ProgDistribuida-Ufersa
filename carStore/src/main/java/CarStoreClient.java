@@ -304,7 +304,7 @@ public class CarStoreClient {
         try {
             UpdateCarRequest request = new UpdateCarRequest(renavam, newModel, CAR_CATEGORY.valueOf(newCategory),newYear, newPrice);
             Response response = Response.fromString(gateway.updateCar(request.toString()));
-            if (response.responseCode() == RESPONSE_CODE.OK) {
+            if (response.responseCode() == RESPONSE_CODE.CREATED) {
                 System.out.println("Car updated successfully.");
             } else {
                 System.out.println("Car update failed: " + response.message());
