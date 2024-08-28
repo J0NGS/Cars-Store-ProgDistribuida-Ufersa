@@ -116,6 +116,7 @@ public class CarStoreCarsDBDiscoveryServerImpl extends UnicastRemoteObject imple
 
             InstanceDetails instance = validInstances.get(currentIndex.get());
             if (instance.weight >= currentWeight) {
+                System.out.println("Instance selected->" + instance.address);
                 return instance.address;
             }
         }

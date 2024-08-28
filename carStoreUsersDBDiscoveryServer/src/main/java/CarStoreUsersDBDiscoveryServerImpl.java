@@ -79,7 +79,9 @@ public class CarStoreUsersDBDiscoveryServerImpl extends UnicastRemoteObject impl
         }
 
         int index = roundRobinIndex.getAndUpdate(i -> (i + 1) % validInstances.size());
-        return validInstances.get(index);
+        String selected = validInstances.get(index);
+        System.out.println("Instance selected->" + selected);
+        return selected;
     }
 
 

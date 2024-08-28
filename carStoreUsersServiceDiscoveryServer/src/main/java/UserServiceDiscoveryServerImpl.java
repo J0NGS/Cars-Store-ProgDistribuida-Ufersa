@@ -52,6 +52,7 @@ public class UserServiceDiscoveryServerImpl extends UnicastRemoteObject implemen
     public String loadBalance() throws RemoteException {
         String selectedInstance = loadBalanceInstance();
         if (selectedInstance != null) {
+            System.out.println("Instance selected->" + selectedInstance);
             return selectedInstance;
         } else {
             throw new RemoteException("No available instances.");
