@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d149b0c9-2076-49f6-84cb-3e572e3b509d" name="Changes" comment="finish">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreCarsDB/src/main/java/BD/ProtocolCarsDBImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsDB/src/main/java/BD/ProtocolCarsDBImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreCarsDB/target/classes/BD/ProtocolCarsDBImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsDB/target/classes/BD/ProtocolCarsDBImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreCarsService/src/main/java/ProtocolCarsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsService/src/main/java/ProtocolCarsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreCarsService/target/classes/ProtocolCarsServiceImpl$RequestHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsService/target/classes/ProtocolCarsServiceImpl$RequestHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreCarsService/target/classes/ProtocolCarsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreCarsService/target/classes/ProtocolCarsServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carStoreUsersService/src/main/java/ProtocolUsersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/carStoreUsersService/src/main/java/ProtocolUsersServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="d149b0c9-2076-49f6-84cb-3e572e3b509d" name="Changes" comment="finish" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -244,7 +236,7 @@
       <workItem from="1724808136273" duration="47000" />
       <workItem from="1724808192754" duration="144000" />
       <workItem from="1724814232123" duration="2991000" />
-      <workItem from="1724863164235" duration="9657000" />
+      <workItem from="1724863164235" duration="10108000" />
     </task>
     <task id="LOCAL-00001" summary="pratica-off1-progDistribuida">
       <option name="closed" value="true" />
@@ -294,7 +286,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724794141023</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="finish">
+      <option name="closed" value="true" />
+      <created>1724873240054</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1724873240054</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
